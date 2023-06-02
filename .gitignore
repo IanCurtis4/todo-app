@@ -40,3 +40,10 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Database files
+db.sqlite3
+
+# Log files
+stderr.log
+stdout.log

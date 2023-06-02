@@ -1,0 +1,17 @@
+<span class="item">
+  <input type="checkbox" [(ngModel)]="item.checked" (change)="changeCheckedItem(item)" [disabled]="(item.checked || item.isDue())" />
+  <div>
+  <span [appStrikeout]="(item.checked || item.isDue())">
+    <span class="description" [innerHTML]="item.description"></span>
+    <span class="dueDate" [innerHTML]="item.dueDate"></span>
+  </span>
+  <span class="priority">
+    <span class="badge badge-pill" [appPriorityColor]="item.priority">
+      {{item.priority}} - {{ priorityLevelName(item.priority) }}
+    </span>
+  </span>
+</div>
+  <button type="button" class="btn btn-primary deleteButton" (click)="deleteItem(item)">
+    Delete item
+  </button>
+</span>

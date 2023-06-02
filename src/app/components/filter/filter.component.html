@@ -1,0 +1,8 @@
+<div class="filter">
+    <h3>Filter</h3>
+    <label for="filterDescription">Description:</label>
+    <input id="filterDescription" [(ngModel)]="settings.description" (input)="updateSettings()">
+
+    <label for="filterPriority">Priority:</label>
+    <input id="filterPriority" type="number" min="0" max="8" step="1" [(ngModel)]="settings.priority" (input)="updateSettings()">
+</div>

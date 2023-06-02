@@ -1,0 +1,29 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #CCC;
+    width: fit-content;
+  }
+
+  .strikeable > * {
+    margin-right: 20px;
+  }
+
+  .strikeable > *:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .description, .dueDate, .priority {
+    flex-basis: 33%;
+  }
+
+  .priority {
+    display: block;
+  }
+
+
